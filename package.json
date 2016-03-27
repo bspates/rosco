@@ -1,0 +1,16 @@
+{
+  "name": "rosco",
+  "version": "0.0.1",
+  "description": "sexy JSON-RPC-ish server ",
+  "repository": "bspates/rosco",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Brian Spates <b.spates@gmail.com> (https://github.com/bspates)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "lodash": "^4.6.1"
+  }
+}
