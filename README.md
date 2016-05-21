@@ -32,16 +32,16 @@ wasted time for:
 
 The hope of this project is to combine the best of both worlds from RESTful and
 RPC. The main advantage of RESTful APIs is the lack of state between calls.
-In contrast the problem with RPC is that the many of its protocols track state
+In contrast the problem with RPC is that many of its protocols track state
 between calls. Where RPC shines is the cognitive simplicity of its
 model. You register methods that can be invoked across systems. The building
-blocks of the server then becomes the functions available to be called. Much
+blocks of your services then become the functions available to be called. Much
 simpler than the layers of routes, url parameters, query parameters, and request
-bodies that have to be defined, parsed, and validated. In this space it seems
-like we are constantly re-solving the same problems.  
+bodies that have to be defined, parsed, and validated. In the RESTful paradigm
+it seems like we are constantly re-solving the same problems.  
 
 The simplicity of calling a method on a remote server can remove the cognitive
-and development overhead of our current RESTful APIs (sooo much boilerplate).
+and development overhead of our current RESTful APIs (soo much boilerplate).
 While having these method invocations follow REST's stateless model we remove
 the major downside to RPC. RPC over HTTP then can provide an existing protocol
 to follow when implementing this hybrid. The only omission being a reference id
