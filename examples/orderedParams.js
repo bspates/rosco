@@ -1,10 +1,10 @@
 var Rosco = require('../index.js');
 
 var app = new Rosco();
-app.register('test', function(one, two, three, cb) {
-  this.app.log(one);
-  this.app.log(two);
-  this.app.log(three);
+app.register('test_param_order', function(one, two, three, cb) {
+  console.log(one);
+  console.log(two);
+  console.log(three);
   cb();
 });
 

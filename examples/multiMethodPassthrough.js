@@ -3,21 +3,21 @@ var Rosco = require('../index.js');
 var app = new Rosco();
 var registry = [
   {
-    methodName: 'test',
+    methodName: 'test_1',
     method: function(payload, cb) {
-      this.app.log(payload);
+      console.log('test 1');
       cb(null, payload);
     }
   },
   {
-    methodName: 'test2',
+    methodName: 'test_2',
     methods: [
       function(payload, cb) {
-        this.app.log("func 1 " + payload);
+        console.log("test 2 func 1 " + payload);
         cb(null, payload);
       },
       function(payload, cb) {
-        this.app.log("func 2 " + payload);
+        console.log("test 2 func 2 " + payload);
         cb(null, payload);
       }
     ]
