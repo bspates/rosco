@@ -14,7 +14,7 @@ var app = new Rosco();
 
 // Register a single method for RPC calls
 app.register('echo', function(payload, callback) {
-  this.logger('executing echo');
+  console.log('executing echo');
   callback(null, payload);
 });
 ```
