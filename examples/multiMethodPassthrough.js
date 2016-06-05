@@ -5,7 +5,7 @@ var registry = [
   {
     methodName: 'test',
     method: function(payload, cb) {
-      this.logger(payload);
+      this.app.log(payload);
       cb(null, payload);
     }
   },
@@ -13,11 +13,11 @@ var registry = [
     methodName: 'test2',
     methods: [
       function(payload, cb) {
-        this.logger("func 1 " + payload);
+        this.app.log("func 1 " + payload);
         cb(null, payload);
       },
       function(payload, cb) {
-        this.logger("func 2 " + payload);
+        this.app.log("func 2 " + payload);
         cb(null, payload);
       }
     ]

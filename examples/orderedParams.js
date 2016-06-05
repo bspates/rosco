@@ -2,9 +2,9 @@ var Rosco = require('../index.js');
 
 var app = new Rosco();
 app.register('test', function(one, two, three, cb) {
-  this.logger(one);
-  this.logger(two);
-  this.logger(three);
+  this.app.log(one);
+  this.app.log(two);
+  this.app.log(three);
   cb();
 });
 
