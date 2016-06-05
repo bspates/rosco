@@ -1,6 +1,6 @@
 {
   "name": "rosco",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sexy JSON-RPC-ish server ",
   "repository": "bspates/rosco",
   "main": "index.js",
