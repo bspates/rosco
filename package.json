@@ -1,9 +1,12 @@
 {
   "name": "rosco",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "sexy JSON-RPC-ish server ",
   "repository": "bspates/rosco",
   "main": "index.js",
+  "engines": {
+    "node": ">=6.2.2"
+  },
   "scripts": {
     "test": "mocha"
   },
